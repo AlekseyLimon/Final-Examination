@@ -17,3 +17,12 @@ string CreateArray(string[] OutputArray, int pos)
         return " " + CreateArray(OutputArray, pos + 1);
     else return "";
 }
+
+string[] array = { "hello_world", "2", "L0L", ":-)", "123", "^_^", "wiz" };
+
+Console.Write("Input arrey: ");
+PrintArray(array);
+Console.WriteLine();
+string solution = CreateArray(array, 0);
+Console.WriteLine($"Output arrey: {solution}");
+Console.WriteLine();
